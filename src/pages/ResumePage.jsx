@@ -1,45 +1,20 @@
 //static about me page
-//keep working on styles
-//add downloadable resume link to button
+
+import ResumeCard from '../components/UI/ResumeCard'
 
 export default function AboutPage() {
+    const frontEndSkills = ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "jQuery"];
+    const backEndSkills = ["APIs", "Node", "Express", "SQL, Sequelize", "MongoDB, Mongoose", "GraphQL", "REST"];
+
     return (
         <div className='container pt-4'>
-            <div className='row'>
-                <div className='col d-flex justify-content-center'>
-                    <button className='resume-btn'>Download Resume</button>
-                </div>
+            <div className='row d-flex justify-content-center'>
+                <ResumeCard title="Front-End Proficiencies" skills={frontEndSkills} />
+                <ResumeCard title="Back-End Proficiencies" skills={backEndSkills} />
             </div>
-            <div className='row d-flex justify-content-center p-2'>
-                <div className='col-lg-4 resume-card rounded m-5 p-0'>
-                    <div className='row w-100'>
-                        <div className="col resume-card-header">
-                            <h3>Front-End Proficiences</h3>
-                        </div>
-                    </div>
-                    <ul className='resume-card-list p-0'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-                <div className='col-lg-4 resume-card rounded m-5 p-0'>
-                    <div className='row w-100'>
-                        <div className="col resume-card-header">
-                            <h3>Back-End Proficiences</h3>
-                        </div>
-                    </div>
-                    <ul className='resume-card-list p-0'>
-                        <li>APIs</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                        <li>SQL, Sequelize</li>
-                        <li>MongoDB, Mongoose</li>
-                        <li>GraphQL</li>
-                        <li>REST</li>
-                    </ul>
+            <div className='row'>
+                <div className='col d-flex justify-content-center mb-2'>
+                    <a href='https://www.reddit.com/r/blurrypicturesofcats/' className='resume-btn rounded'>Download Resume</a>
                 </div>
             </div>
         </div>
