@@ -7,8 +7,7 @@ import monkeyComp2 from '@assets/project-images/monkeycomputer2.png';
 import orangutan from '@assets/project-images/orangutan-coding.png';
 
 
-//add links to projects and paths for images
-//add images to assets
+//add github links
 const projects = [
     {
       id:1,
@@ -51,5 +50,3 @@ const projects = [
 export default function Portfolio() {
     return <Project projects={projects} />;
 }
-
-//look at instructor 11 and 13 in mod 21, rendering list stuff

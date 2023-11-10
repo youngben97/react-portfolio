@@ -1,6 +1,8 @@
 // need to add functionality for active/inactive links depending on what page, act 21 + 22
 
+
 export default function Navbar({ links }) {
+
     return (
         <>
           <header className= 'container-fluid p-0' style={{ height: '200px' }}>
