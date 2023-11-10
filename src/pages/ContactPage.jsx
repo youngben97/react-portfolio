@@ -1,5 +1,7 @@
 import {useState} from 'react'
 
+//need to add in email validationg and message validation, see activity 15 + 16
+
 export default function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
