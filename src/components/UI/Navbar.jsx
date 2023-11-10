@@ -1,3 +1,5 @@
+// need to add functionality for active/inactive links depending on what page, act 21 + 22
+
 export default function Navbar({ links }) {
     return (
         <>
