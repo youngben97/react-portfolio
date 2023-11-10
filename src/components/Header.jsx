@@ -21,5 +21,3 @@ export default function Nav() {
           ]} />
     );
 }
-
-//move this inside the header element
