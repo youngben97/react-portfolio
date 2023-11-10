@@ -1,25 +1,55 @@
-//static about me page
-export default function AboutPage() {
-    return (
-        <div className='container pt-4'>
-            <div className='row p-2'>
-                <div className='col-lg-4'>
-                    <p>
-                        Hello! I am a web developer based in Salt Lake City, UT.
-                        I have experience working with HTML, CSS, JS, SQL/Sequelize, MongoDB/Mongoose,
-                        Express, Node, and most recently, React.
+import Project from '../components/UI/Project';
+import baboon from '@assets/project-images/baboon-computer.png';
+import gorilla from '@assets/project-images/gorilla-mac.png';
+import coffeeMonkey from '@assets/project-images/monkeycoffee2.png';
+import monkeyComp from '@assets/project-images/monkeycomputer.png';
+import monkeyComp2 from '@assets/project-images/monkeycomputer2.png';
+import orangutan from '@assets/project-images/orangutan-coding.png';
 
-                        In my free time I like to read, cook, and get involved
-                        in my local theatre community.
-                    </p>
-                </div>
-            </div>
-            <div className='row p-2'>
-                <img className='col-lg-4'></img>
-                //add an image
-            </div>
-        </div>
-    )
+
+//add links to projects and paths for images
+//add images to assets
+const projects = [
+    {
+      id:1,
+      name: 'Grow Box',
+      url: 'https://grow-box-480c3b8ce4f5.herokuapp.com/',
+      img: baboon
+    },
+    {
+      id: 2,
+      name: 'Tech Blog',
+      url: 'https://tech-blog-production-8fe6.up.railway.app/',
+      img: gorilla
+    },
+    {
+      id: 3,
+      name: 'Javascript Quiz',
+      url: 'https://youngben97.github.io/javascript-quiz/',
+      img: coffeeMonkey
+    },
+    {
+      id: 4,
+      name: 'Weather Dashboard',
+      url: 'https://youngben97.github.io/weather-dashboard/',
+      img: monkeyComp
+    },
+    {
+      id: 5,
+      name: 'E-Commerce Backend',
+      url: 'https://github.com/youngben97/e-commerce-backend',
+      img: monkeyComp2
+    },
+    {
+      id: 6,
+      name: 'Social Network API',
+      url: 'https://github.com/youngben97/social-network-api',
+      img: orangutan
+    },
+]
+
+export default function Portfolio() {
+    return <Project projects={projects} />;
 }
 
 //look at instructor 11 and 13 in mod 21, rendering list stuff
